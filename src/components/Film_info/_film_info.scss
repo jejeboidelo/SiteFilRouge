@@ -1,0 +1,22 @@
+.moncontain {
+  display: flex;
+  align-items: stretch;
+}
+
+#img1 {
+  height: 100%;
+  width: 15vw;
+  margin: auto;
+}
+
+
+.contentDiv {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}

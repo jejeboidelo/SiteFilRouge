@@ -1,0 +1,14 @@
+.test:hover {
+  animation: anim 2s linear infinite;
+}
+@keyframes anim {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.page{
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
