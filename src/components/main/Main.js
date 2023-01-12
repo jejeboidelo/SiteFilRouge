@@ -5,6 +5,7 @@ import {compareArraysAsSet} from "@testing-library/jest-dom/dist/utils";
 import Film_info from "../Film_info/Film_info";
 import BarRecherche from "../BarRecherche/BarRecherche";
 import ListeFilm from "../ListeFilm/ListeFilm";
+import store from "../../store/store";
 
 
 
@@ -54,15 +55,16 @@ export default function Main (){
     return (
 
         <div className="page">
+            <p>{store.getState().value}</p>
             <BarRecherche handleChange={(e) => handleClick(e)} ></BarRecherche>
 
             { showListe &&
-                <ListeFilm ListeFilm={films} handleChange={(e) => log(e)}></ListeFilm>
+                <ListeFilm className="margetop" ListeFilm={films} handleChange={(e) => log(e)}></ListeFilm>
 
             }
 
             {!showListe &&
-                <Film_info InfoFilm={InfoFilm} envoieRetour={getRetour} > </Film_info>
+                <Film_info className="margetop" InfoFilm={InfoFilm} envoieRetour={getRetour} > </Film_info>
             }
 
         </div>
@@ -72,3 +74,4 @@ export default function Main (){
 
 
 }
+

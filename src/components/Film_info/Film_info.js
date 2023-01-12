@@ -15,7 +15,7 @@ export default function Film_info({InfoFilm,envoieRetour}){
 
 
     return (
-        <div>
+        <div className="margintop">
             <div className="moncontain">
 
                 <div className="contentDiv">

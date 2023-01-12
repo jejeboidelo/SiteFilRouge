@@ -1,1 +1,38 @@
-.BarRecherche {}
+.BarRecherche {
+  display: flex;
+  flex-direction: column;
+
+
+}
+#titre {
+  text-align: center;
+}
+
+#divBarRec {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+height: 12vh;
+}
+.itemcenter {
+
+  width: 34vw;
+  margin-left: 33vw;
+}
+
+.itemright {
+  width: 32vw;
+
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.mesboutons {
+  width: 33%;
+
+}
+#dedicaceabibi {
+  margin-bottom: 5px;
+}
